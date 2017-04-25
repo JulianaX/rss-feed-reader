@@ -31,7 +31,7 @@ class Perpage {
         $start = '<a href="?page=' . ($page_number) .'">&laquo;</a>';
         for ($i = 1; $i <= $this->pages; $i++) {
             if ($i == $this->per_page){
-                $start .= '<a href="#" class = "active">' . $i . '</a>';
+                $start .= '<a href="#" class = "paging">' . $i . '</a>';
             }else{
                 $start .= '<a href="?page=' . $i . '">' . $i . '</a>';
             }

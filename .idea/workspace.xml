@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8da5390-b1e0-4e86-93a1-57fe80befc10" name="Default" comment="" />
+    <list default="true" id="e8da5390-b1e0-4e86-93a1-57fe80befc10" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagination/pagination.php" afterPath="$PROJECT_DIR$/pagination/pagination.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +30,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rss.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rss.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rss/rss.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
+            <state relative-caret-position="17">
               <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pagination.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pagination/pagination.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -55,6 +67,7 @@
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/rss/rss.php" />
+        <option value="$PROJECT_DIR$/pagination/pagination.php" />
       </list>
     </option>
   </component>
@@ -86,6 +99,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -148,10 +163,22 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rss-feed-reader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rss-feed-reader" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pagination" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,17 +259,18 @@
       <workItem from="1493080291823" duration="4422000" />
       <workItem from="1493109962815" duration="16426000" />
       <workItem from="1493128737359" duration="118000" />
+      <workItem from="1493131294657" duration="196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21002000" />
+    <option name="totallyTimeSpent" value="21198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="90" width="1370" height="754" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26143292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2652439" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -272,6 +300,25 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <marker date="1493128848581" expanded="true" signature="151:169" ph="SELECT * FRO... news" />
+            <marker date="1493128848581" expanded="true" signature="766:819" ph="SELECT * FRO... news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rss/rss.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -307,21 +354,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pagination/pagination.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pagination/pagination.class.php" />
     <entry file="file://D:/Курси/rss-feed-reader1/public/fetch_pages.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="51" />
-          <folding>
-            <marker date="1490660703309" expanded="true" signature="307:360" ph="SELECT * FRO... news" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -406,44 +443,14 @@
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.649/dbcontroller.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.629/getresult.php" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.426/index.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.118/pagination.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.474/pagination.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="62" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="79" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.118/pagination.class.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.474/pagination.class.php" />
     <entry file="file://$PROJECT_DIR$/public/pagination.php" />
     <entry file="file://$PROJECT_DIR$/public/fetch_pages.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.247/getresult.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.586/dbcontroller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.247/getresult.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.586/dbcontroller.php" />
     <entry file="file://$PROJECT_DIR$/public/getresult.php" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.781/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.781/index.php" />
     <entry file="file://D:/Курси/rss-feed-reader1/rss/rss.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -505,16 +512,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="51" />
-          <folding>
-            <marker date="1490660703309" expanded="true" signature="307:360" ph="SELECT * FRO... news" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rss/rss.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="17">
           <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pagination/pagination.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="43" column="22" lean-forward="true" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
           <folding />
         </state>
       </provider>
