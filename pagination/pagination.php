@@ -1,29 +1,23 @@
 <?php
 class Perpage {
-    private $items;
     private $quantity_of_items;
     private $quantity_of_pages;
     private $per_page;
     private $pages;
 
-    public function __construct($items, $quantity_of_items, $quantity_of_pages, $per_page) {
-        $this->items = $items;
+    public function __construct($quantity_of_items, $quantity_of_pages, $per_page) {
         $this->quantity_of_items = $quantity_of_items;
         $this->quantity_of_pages = $quantity_of_pages;
         $this->per_page = $per_page;
     }
 
-    public function items(){
-        return $this->items;
-    }
-
     function pagination() {
         $this->pages = ceil($this->quantity_of_items / $this->quantity_of_pages);
         if(isset($_POST["page"])){
-            $page_number = filter_var($_POST["page"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH); //filter number
-            if(!is_numeric($page_number)){die('Invalid page number!');} //incase of invalid page number
+            $page_number = filter_var($_POST["page"], FILTER_SANITIZE_NUMBER_INT, FILTER_FLAG_STRIP_HIGH);
+            if(!is_numeric($page_number)){die('Invalid page number!');}
         }else{
-            $page_number = 1; //if there's no page number, set it to 1
+            $page_number = 1;
         }
         if ($this->per_page > 1){
             $page_number = $this->per_page - 1;
