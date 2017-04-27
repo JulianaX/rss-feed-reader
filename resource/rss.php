@@ -17,9 +17,9 @@ $success = $feed->init();//обробка параметрів конфігур�
 $feed->handle_content_type();
 $items = $feed->get_items();//повертає масив новин
 
-$start = (isset($_GET['start']) && !empty($_GET['start'])) ? $_GET['start'] : 0; // Where do we start?
-$finish = (isset($_GET['length']) && !empty($_GET['length'])) ? $_GET['length'] : 3; // How many per page?
-$max = $feed->get_item_quantity(); // Where do we end?
+$start = (isset($_GET['start']) && !empty($_GET['start'])) ? $_GET['start'] : 0; // початок
+$finish = (isset($_GET['length']) && !empty($_GET['length'])) ? $_GET['length'] : 3; // кількість новин на сторінці
+$max = $feed->get_item_quantity(); // кінець
 $pagination = new Pagination($start, $finish, $max);
 $pagination -> perpage();
 
