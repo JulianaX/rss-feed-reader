@@ -1,5 +1,51 @@
 <?php
-class Perpage {
+class Pagination {
+    public $nextlink;
+    public $prevlink;
+    public $start;
+    public $length;
+    public $begin;
+    public $end;
+    public $max;
+
+
+    function __construct( $start, $length, $max) {
+       // $this->nextlink = $nextlink;
+        //$this->prevlink = $prevlink;
+        $this->start = $start;
+        $this->length = $length;
+        $this->max = $max;
+    }
+
+    function perpage() {
+$next = (int) $this->start + (int) $this->length;
+$prev = (int) $this->start - (int) $this->length;
+
+// наступна сторінка
+        $this->nextlink = '<a href="?start=' . $next . '&length=' . $this->length . '"> &raquo;</a>';
+if ($next > $this->max)
+{
+    $this->nextlink = 'Next &raquo;';
+}
+
+// Create the PREVIOUS link
+        $this->prevlink = '<a href="?start=' . $prev . '&length=' . $this->length . '">&laquo; </a>';
+if ($prev < 0 && (int) $this->start > 0)
+{
+    $this->prevlink = '<a href="?start=0&length=' . $this->length . '">&laquo; </a>';
+}
+else if ($prev < 0)
+{
+    $this->prevlink = '&laquo; ';
+}
+
+// Normalize the numbering for humans
+        $this->begin = (int) $this->start + 1;
+        $this->end = ($next > $this->max) ? $this->max : $next;
+
+ }
+}
+/*class T {
     private $quantity_of_items;
     private $quantity_of_pages;
     private $per_page;
@@ -37,5 +83,4 @@ class Perpage {
         $start .= '<a href="?page=' . $end . '">&raquo;</a>';
         return $start;
     }
-}
-?>
+}*/
